@@ -1,0 +1,31 @@
+<html>
+<head>
+  This is my webStore!
+  <script type="text/javascript"
+               src="formChecker.js">
+         </script>
+</head>
+<form name = "myOrder" action = "customerBackend.php" method = "post" onSubmit = "return formCheck()">
+  Please enter your username
+  <input type = "text" name = "userName" id = "userName" placeholder="name@domain.com"><br>
+  Please enter your password
+  <input type = "text" name = "passWord" id = "passWord" placeholder="password"><br><br>
+
+  What would you like to buy?<br>
+  <input type = "checkbox" name = "KU T-Shirt" id = "tShirt" value = "KU T-Shirt">$10 KU T-Shirt
+  <input type = "number" name = "shirtNum" value = 0 id = shirtNum placeholder="quantity"><br>
+  <input type = "checkbox" name = "KU Sweater" id = "sweatShirt" value = "KU Sweater">$20 KU Sweater
+  <input type = "number" name = "sweatNum" value = 0 id = sweatNum placeholder="quantity"><br>
+  <input type = "checkbox" name = "KU Hat" id = "hat" value = "KU Hat">$5 KU Hat
+  <input type = "number" name = "hatNum" value = 0 id = hatNum placeholder="quantity"><br><br>
+
+  Shipping Options<br>
+  <input type = "checkbox" name = "shipping" id = "7-day" value = "7-day">FREE 7-Day Shipping<br>
+  <input type = "checkbox" name = "shipping" id = "3-day" value = "3-day">$5 3-day<br>
+  <input type = "checkbox" name = "shipping" id = "overnight" value = "overnight">$50 Next Day Delivery<br><br>
+
+  <input type = "Submit">
+  <input type = "Reset">
+
+</form>
+</html>
